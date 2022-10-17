@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">BarbieGirls Club Beauty (Alpha 1.1)</div>
+        <div id="unity-build-title">BarbieGirls Club Beauty | Alpha Test 1.1</div>
       </div>
     </div>
     <script>
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/mainscene_test.loader.js";
+      var loaderUrl = buildUrl + "/mainscene_devtest.loader.js";
       var config = {
-        dataUrl: buildUrl + "/mainscene_test.data",
-        frameworkUrl: buildUrl + "/mainscene_test.framework.js",
-        codeUrl: buildUrl + "/mainscene_test.wasm",
+        dataUrl: buildUrl + "/mainscene_devtest.data",
+        frameworkUrl: buildUrl + "/mainscene_devtest.framework.js",
+        codeUrl: buildUrl + "/mainscene_devtest.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "immsoftwares",
         productName: "BarbieGirls",
@@ -75,11 +75,14 @@
       // the canvas DOM size and WebGL render target sizes yourself.
       // config.matchWebGLToCanvasSize = false;
 
-      
+     
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       
-      canvas.style.background = "url('" + buildUrl + "/mainscene_test.jpg') center / cover";
+
+      canvas.style.background = "url('" + buildUrl + "/mainscene_devtest.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
